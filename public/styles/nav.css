@@ -1,0 +1,55 @@
+nav {
+  height: 120px;
+  width: 100%;
+  color: #fff;
+  padding: 1.5em;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav span.logo {
+  font-family: "Bungee", cursive;
+}
+
+nav div.nav-right-text {
+  margin-left: auto;
+  text-align: center;
+}
+
+div.nav-right-text span {
+  display: block;
+  line-height: 0.8;
+}
+
+@keyframes jump {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 6px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.nav-right-text img {
+  position: relative;
+}
+
+.nav-right-text:hover {
+  cursor: pointer;
+}
+
+.nav-right-text:hover img {
+  animation: jump 2s infinite;
+}
+
+/* Laptops / Desktops: minimum width of 1024px */
+@media only screen and (min-width: 1024px) {
+  nav {
+    background: #4056a1;
+  }
+}
