@@ -1,8 +1,4 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
+
 //create template for new tweet
 function createTweetElement(tweet) {
   const $tweet = $(`
@@ -18,7 +14,7 @@ function createTweetElement(tweet) {
           <p>${tweet.content.text}</p>
         </div>
         <footer>
-          <p class="published-date">time</p>
+          <p class="published-date">10 days ago</p>
           <span id="tweet-icons">
             <img src="/images/flag24.png">
             <img src="/images/retweet30px.png">

@@ -28,6 +28,7 @@
     ></script>
   </head>
 
+
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
@@ -37,6 +38,7 @@
         <img src="images/arrow.png" />
       </div>
     </nav>
+    <!-- End of nav -->
     <div class="tweeter-body">
       <header id="main-header">
         <div>
@@ -46,31 +48,33 @@
           <h2>Samira <span>Banihassan</span></h2>
         </div>
       </header>
-      </div>
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <section class="new-tweet">
-        <div class="error-notice">
-          <div class="error"></div>
-        </div>
-        <form id="tweet-form">
-          <label class="tweet-label" for="tweet-text"
-            ><strong>What are you humming about?</strong></label
-          >
-          <textarea
-            class="tweet-textarea"
-            name="text"
-            id="tweet-text"
-          ></textarea>
-          <div class="button-parrent">
-            <button class="tweet-button" type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text"
-              ><strong>140 </strong></output
-            >
+      <!-- Page-specific (main) content here -->
+      <main class="container">
+        <section class="new-tweet">
+          <div class="error-notice">
+            <div class="error"></div>
           </div>
-        </form>
-      </section>
-      <section id="tweets-container"></section>
-    </main>
+          <form id="tweet-form">
+            <label class="tweet-label" for="tweet-text"
+              ><strong>What are you humming about?</strong></label
+            >
+            <textarea
+              class="tweet-textarea"
+              name="text"
+              id="tweet-text"
+            ></textarea>
+            <div class="button-parrent">
+              <button class="tweet-button" type="submit">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text"
+                ><strong>140 </strong></output
+              >
+            </div>
+          </form>
+        </section>
+        <section id="tweets-container"></section>
+        <a href="#" class="scrollToTop"><img src="images/arrow-up.png" /></a>
+      </main>
+      <!-- End of main -->
+    </div>
   </body>
 </html>
